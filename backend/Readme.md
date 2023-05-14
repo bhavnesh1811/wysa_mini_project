@@ -1,8 +1,8 @@
 # 1) REST API interaction flows
 
-### For screen 1, Add User data.
+## For screen 1, Add User data.
 
-POST /setuser
+### POST /setuser
 Host: {{baseUrl}}
 
 {
@@ -12,7 +12,7 @@ username: "Bhavnesh"
 }
 }
 
-response:
+### response:
 
 {
 "status": 200,
@@ -20,9 +20,9 @@ response:
 "displayMessage": "Successful"
 }
 
-### For screen 2, Add Sleep Struggle data.
+## For screen 2, Add Sleep Struggle data.
 
-POST /sleepStuggle
+### POST /sleepStuggle
 Host: {{baseUrl}}
 
 {
@@ -32,7 +32,7 @@ sleepStuggle: "2 to 8 weeks"
 }
 }
 
-response:
+### response:
 
 {
 "status": 200,
@@ -40,9 +40,9 @@ response:
 "displayMessage": "Successful"
 }
 
-### For screen 3, Add Go to Bed Time.
+## For screen 3, Add Go to Bed Time.
 
-POST /goTobed
+### POST /goTobed
 Host: {{baseUrl}}
 
 {
@@ -52,7 +52,7 @@ goTobed: "11:00 Pm"
 }
 }
 
-response:
+### response:
 
 {
 "status": 200,
@@ -60,9 +60,9 @@ message: "Go to bed response added",
 displayMessage: "Successful",
 }
 
-### For screen 4, Add Get Out of Bed Time.
+## For screen 4, Add Get Out of Bed Time.
 
-POST /getOutofBed
+### POST /getOutofBed
 Host: {{baseUrl}}
 
 {
@@ -72,7 +72,7 @@ getOutofBed: "7:00 Am"
 }
 }
 
-response:
+### response:
 
 {
 "status": 200,
@@ -80,9 +80,9 @@ message: "Get out of Bed response added",
 displayMessage: "Successful"
 }
 
-### For screen 5, Add typical day sleep Hours.
+## For screen 5, Add typical day sleep Hours.
 
-POST /sleepHours
+### POST /sleepHours
 Host: {{baseUrl}}
 
 {
@@ -92,7 +92,7 @@ sleepHours: "5"
 }
 }
 
-response:
+### response:
 
 {
 "status": 200,
@@ -100,9 +100,9 @@ message: "Sleep Hours response added",
 displayMessage: "Successful",
 }
 
-### For screen 6, Calculate Efficiency.
+## For screen 6, Calculate Efficiency.
 
-GET /sleepEfficiency
+### GET /sleepEfficiency
 Host: {{baseUrl}}
 
 {
@@ -119,7 +119,7 @@ sleepEfficiency: 0,
 }
 }
 
-response:
+### response:
 
 {
 "status": 200,  
