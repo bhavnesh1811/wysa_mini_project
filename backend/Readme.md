@@ -102,7 +102,7 @@ displayMessage: "Successful",
 
 ## For screen 6, Calculate Efficiency.
 
-### GET /sleepEfficiency
+### POST /sleepEfficiency
 Host: {{baseUrl}}
 
 {
