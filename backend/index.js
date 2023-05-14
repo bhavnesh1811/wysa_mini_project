@@ -64,7 +64,7 @@ app.post("/sleepHours", async (req, res) => {
     });
 });
 
-app.get("/sleepEfficiency", async (req, res) => {
+app.post("/sleepEfficiency", async (req, res) => {
   let { username } = req.body;
 
   let user = await UserModel.findOne({ username });
