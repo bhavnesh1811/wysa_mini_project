@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 app.post("/setuser", async (req, res) => {
   let user = new UserModel(req.body);
   await user.save();
-  res.status(200).send({ message: "User Added" });
+  res.status(200).send({ message: "User Added",displayMessage: "Successful" });
 });
 
 app.post("/sleepStuggle", async (req, res) => {

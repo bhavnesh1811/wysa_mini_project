@@ -1,4 +1,25 @@
-### For screen 1, Add Sleep Struggle data.
+### For screen 1, Add User data.
+
+POST /setuser
+Host: {{baseUrl}}
+
+{
+"updateObject": {
+        username: "Bhavnesh",
+        }
+}
+
+<!--
+response:
+
+{
+    "status": 200,
+    "msg: "User Added",
+    "displayMessage": "Successful"
+}
+-->
+
+### For screen 2, Add Sleep Struggle data.
 
 POST /sleepStuggle
 Host: {{baseUrl}}
@@ -15,12 +36,12 @@ response:
 
 {
     "status": 200,
-    "msg: "Sleep Struggle response added"",
+    "msg: "Sleep Struggle response added",
     "displayMessage": "Successful"
 }
 -->
 
-### For screen 2, Add Go to Bed Time.
+### For screen 3, Add Go to Bed Time.
 
 POST /goTobed
 Host: {{baseUrl}}
@@ -42,7 +63,7 @@ response:
 }
 -->
 
-### For screen 3, Add Get Out of Bed Time.
+### For screen 4, Add Get Out of Bed Time.
 
 POST /getOutofBed
 Host: {{baseUrl}}
@@ -64,7 +85,7 @@ response:
 }
 -->
 
-### For screen 4, Add typical day sleep Hours.
+### For screen 5, Add typical day sleep Hours.
 
 POST /sleepHours
 Host: {{baseUrl}}
@@ -86,7 +107,7 @@ response:
 }
 -->
 
-### For screen 5, Calculate Efficiency.
+### For screen 6, Calculate Efficiency.
 
 GET /sleepEfficiency
 Host: {{baseUrl}}
