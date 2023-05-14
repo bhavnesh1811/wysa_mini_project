@@ -11,7 +11,7 @@ Host: {{baseUrl}}
         }
 }
 
-<!--
+
 response:
 
 {
@@ -19,7 +19,7 @@ response:
     "msg: "User Added",
     "displayMessage": "Successful"
 }
--->
+
 
 ### For screen 2, Add Sleep Struggle data.
 
@@ -33,7 +33,7 @@ Host: {{baseUrl}}
         }
 }
 
-<!--
+
 response:
 
 {
@@ -41,7 +41,7 @@ response:
     "msg: "Sleep Struggle response added",
     "displayMessage": "Successful"
 }
--->
+
 
 ### For screen 3, Add Go to Bed Time.
 
@@ -55,7 +55,7 @@ Host: {{baseUrl}}
         }
 }
 
-<!--
+
 response:
 
 {
@@ -63,7 +63,7 @@ response:
     message: "Go to bed response added",
     displayMessage: "Successful",
 }
--->
+
 
 ### For screen 4, Add Get Out of Bed Time.
 
@@ -77,7 +77,7 @@ Host: {{baseUrl}}
         }
 }
 
-<!--
+
 response:
 
 {
@@ -85,7 +85,7 @@ response:
     message: "Get out of Bed response added",
     displayMessage: "Successful",
 }
--->
+
 
 ### For screen 5, Add typical day sleep Hours.
 
@@ -99,7 +99,7 @@ Host: {{baseUrl}}
         }
 }
 
-<!--
+
 response:
 
 {
@@ -107,7 +107,7 @@ response:
     message: "Sleep Hours response added",
     displayMessage: "Successful",
 }
--->
+
 
 ### For screen 6, Calculate Efficiency.
 
@@ -127,15 +127,15 @@ Host: {{baseUrl}}
         __v: 0
     }
 }
-<!--
+
 response:
 
 {
-    "status": 200,
+    "status": 200,       
     sleepEfficiency: 63,
     displayMessage: "Successful",
 }
--->
+
 
 # 2 Database schema
 
