@@ -1,4 +1,4 @@
-# 1 REST API interaction flows
+# 1) REST API interaction flows
 
 ### For screen 1, Add User data.
 
@@ -6,9 +6,10 @@ POST /setuser
 Host: {{baseUrl}}
 
 {
-"updateObject": {
-        username: "Bhavnesh",
-        }
+"updateObject": 
+{
+    username: "Bhavnesh"
+}
 }
 
 
@@ -29,7 +30,7 @@ Host: {{baseUrl}}
 {
 "updateObject": {
         username: "Bhavnesh",
-        sleepStuggle: "2 to 8 weeks",
+        sleepStuggle: "2 to 8 weeks"
         }
 }
 
@@ -51,7 +52,7 @@ Host: {{baseUrl}}
 {
 "updateObject": {
         username: "Bhavnesh",
-        goTobed: "11:00 Pm",
+        goTobed: "11:00 Pm"
         }
 }
 
@@ -73,7 +74,7 @@ Host: {{baseUrl}}
 {
 "updateObject": {
         username: "Bhavnesh",
-        getOutofBed: "7:00 Am",
+        getOutofBed: "7:00 Am"
         }
 }
 
@@ -83,7 +84,7 @@ response:
 {
     "status": 200,
     message: "Get out of Bed response added",
-    displayMessage: "Successful",
+    displayMessage: "Successful"
 }
 
 
@@ -95,7 +96,7 @@ Host: {{baseUrl}}
 {
 "updateObject": {
         username: "Bhavnesh",
-        sleepHours: "5",
+        sleepHours: "5"
         }
 }
 
@@ -137,13 +138,18 @@ response:
 }
 
 
-# 2 Database schema
+# 2) Database schema
 
 const userSchema = mongoose.Schema({
   username: { type: String, required: true },
+  
   sleepStuggle: { type: String ,default:""},
+  
   goTobed: { type: String,default:"" },
+  
   getOutofBed: { type: String ,default:""},
+  
   sleepHours: { type: String ,default:""},
-  sleepEfficiency: { type: Number,default:0 },
+  
+  sleepEfficiency: { type: Number,default:0 }
 });
