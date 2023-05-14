@@ -1,3 +1,5 @@
+# 1 REST API interaction flows
+
 ### For screen 1, Add User data.
 
 POST /setuser
@@ -134,3 +136,14 @@ response:
     displayMessage: "Successful",
 }
 -->
+
+# 2 Database schema
+
+const userSchema = mongoose.Schema({
+  username: { type: String, required: true },
+  sleepStuggle: { type: String ,default:""},
+  goTobed: { type: String,default:"" },
+  getOutofBed: { type: String ,default:""},
+  sleepHours: { type: String ,default:""},
+  sleepEfficiency: { type: Number,default:0 },
+});
